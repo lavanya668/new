@@ -2,12 +2,12 @@ pipeline{
 	agent any
 		stages{
 			stage('verification'){
-		steps{
-			echo "$GIT_BRANCH"
+				steps{
+					echo "$GIT_BRANCH"
 			
-		     }
+		    		     }
 			stage('Docker Build'){
-			             stetps{
+			        steps{
 				     	 pwsh(script: 'docker images -a')
 				      	 pwsh(script:""" 
 				              cd azure-vote/
