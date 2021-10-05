@@ -1,10 +1,11 @@
 pipeline{
 	agent any
-	stages{
-	  stage('verification')
+		stages{
+			stage('verification'){
 		steps{
 			echo $GIT_BRANCH
 			
 		}
 	}
+}
 }
