@@ -1,11 +1,11 @@
 pipeline{
 	agent any
-		Dockerfile true
+	     Dockerfile true
 		stages{
 			stage('verification'){
 				steps{
 					echo "$GIT_BRANCH"
-			
+				}
 		        }
 			stage('Docker Build'){
 			        steps{
