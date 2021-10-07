@@ -3,20 +3,11 @@ pipeline{
 		stages{
 			stage('verification'){
 				steps{
-					echo "$GIT_BRANCH"
+					pwsh(script: 'Write-Output "hello"') 
 			
 		    		     }
 			}
-			stage('Docker Build'){
-			        steps{
-				     	 docker images -a
-				      	 cd azure-vote/
-				         docker images -a 
-				         docker build -t jenkins-pipeline .
-				         docker images -a
-				         cd ..
-				           				      }
-				      }
+			
 	}
 }
 
