@@ -3,7 +3,7 @@ pipeline{
 		stages{
 			stage('verification'){
 				steps{
-					sh(script: 'echo "hello"') 
+					sh('echo "hello"') 
 			
 		    		     }
 		}
