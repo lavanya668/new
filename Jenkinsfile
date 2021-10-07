@@ -3,7 +3,7 @@ pipeline{
 		stages{
 			stage('verification'){
 				steps{
-					pwsh(script: 'Write-Output "hello"') 
+					sh(script: 'echo "hello"') 
 			
 		    		     }
 		}
