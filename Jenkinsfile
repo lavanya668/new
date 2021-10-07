@@ -1,11 +1,6 @@
 pipeline{
 	agent any
 		stages{
-			stage('verification'){
-				steps{
-					echo "$GIT_BRANCH"
-				}
-		        }
 			stage('Docker Build'){
 			        steps{
 				     	      docker images -a
@@ -14,8 +9,7 @@ pipeline{
 				              docker build -t jenkins-pipeline .
 				              docker images -a
 				              cd ..
-				
-				    }
+			}
 		}
 }
-
+}
