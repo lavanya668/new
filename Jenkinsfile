@@ -6,7 +6,7 @@ pipeline{
 					pwsh(script: 'Write-Output "hello"') 
 			
 		    		     }
-			}
+		}
 			
 	}
 }
